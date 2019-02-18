@@ -1,0 +1,4 @@
+baseURL = "http://canhascodez.com/"
+languageCode = "en-us"
+title = "Can Has Codez"
+theme = "onepress"
