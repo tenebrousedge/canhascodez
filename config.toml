@@ -28,7 +28,7 @@ canonifyURLs = true
 
   github = "https://github.com/tenebrousedge"
 
-  widgets = true
+  widgets = false
 
   authorCard = true
 
