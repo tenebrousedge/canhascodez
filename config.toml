@@ -2,3 +2,40 @@ baseURL = "http://canhascodez.com/"
 languageCode = "en-us"
 title = "Can Has Codez"
 theme = "onepress"
+
+DisqusShortname = "can-has-codez"
+
+copyright = "© 2019 Kai, licensed CC0"
+
+canonifyURLs = true
+
+[permalinks]
+  posts = "/:year/:month/:title/"
+
+[params]
+
+  author = "Kai"
+
+  bio = "I am a self-taught freelance web programmer, originally from Alaska."
+
+  logo = "/images/chc_logo_00.png"
+
+  avatar = "/images/kolor_k.png"
+
+  opengraphImage = "/images/chc_logo_icon.png"
+
+  enableRss = true
+
+  github = "https://github.com/tenebrousedge"
+
+  widgets = true
+
+  authorCard = true
+
+  shareButton = true
+
+  highlightJS = true
+
+  readMore = "Read more"
+
+  customCSS = true
