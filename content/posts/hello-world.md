@@ -25,4 +25,4 @@ Crystal:
 puts "Hello, World!"
 ```
 
-*Viva la difference.*
+*Vive la différence.*
