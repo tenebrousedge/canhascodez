@@ -1,8 +1,11 @@
-
 <div id="disqus_thread"></div>
 <h3>Questions? Corrections? Cute cat pictures? Leave them all in the comments!</h3>
 <script type="text/javascript">
-
+  var disqus_config = function() {
+    this.page.url = {{ .Permalink }};
+    this.page.identifier = {{ .Permalink }};
+    this.page.title = {{ .Title }};
+  }
 (function() {
     // Don't ever inject Disqus on localhost--it creates unwanted
     // discussions from 'localhost:1313' on your Disqus account...
@@ -11,8 +14,9 @@
 
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     var disqus_shortname = '{{ .Site.DisqusShortname }}';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.setAttribute('data-timestamp', +new Date())
+    (document.head || document.body).appendChild(dsq);
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
