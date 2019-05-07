@@ -1,7 +1,6 @@
 ---
 title: "Hello, World!"
 date: 2019-02-18T09:23:05-08:00
-draft: true
 tags: ["ruby", "crystal"]
 categories: ["programming"]
 featuredImage: "images/31031723265_cecc943edd_h.jpg"

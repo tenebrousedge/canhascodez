@@ -1,7 +1,6 @@
 ---
 title: "Exercism № 1: Hamming"
 date: 2019-03-17T18:49:54-07:00
-draft: true
 tags: ["ruby", "crystal", "exercism"]
 categories: ["programming"]
 summary: "We begin exploring Ruby and Crystal with Exercism problems, starting with counting differences between strings."

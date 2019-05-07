@@ -1,7 +1,6 @@
 ---
 title: "How to Compile Crystal on Ubuntu"
 date: 2019-03-25T20:31:58-07:00
-draft: true
 categories: ["programming"]
 tags: ["crystal", "Ubuntu", "bugs"]
 summary: If at first you don't succeed, check this post out.
