@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <article class="single">
+    <h1>{{ .Title }}</h1>
+    <section class="extras">
+        <span class="tags">
+          <small class="time">{{ .Date.Format "January 2, 2006" }}</small>
+          {{ if .Params.tags }}
+             , posted under 
+             {{range .Params.tags}}
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+             {{end}}
+          {{end}}
+        </span>
+    </section>
+    <section class="description">
+      {{ .Description }}
+    </section>
+    {{ if .Params.featuredImage }}
+    <section class="featuredImage">
+        <img src="{{ .Params.featuredImage }}" alt="{{ .Title }}">
+        {{ if .Params.imageCredit }}
+          <span style="font-size:75%; float:right;">Image Credit: {{ .Params.imageCredit | safeHTML }}</span>
+        {{ end }}
+    </section>
+    {{ end }}
+    <section id="content" class="body">
+        {{ .Content }}
+    </section> 
+    
+    <!-- You can add a call to action here -->
+     
+  </article>
+  {{ partial "share.html" . }} 
+  {{ partial "disqus.html" . }}
+  {{ partial "author.html" . }}
+{{ end }}
+
+{{ define "widgets" }}
+	{{ partial "widgets.html" . }}
+{{ end }}
