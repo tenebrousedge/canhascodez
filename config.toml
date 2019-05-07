@@ -9,6 +9,9 @@ copyright = "© 2019 Kai, licensed CC0"
 
 canonifyURLs = true
 
+pygmentsCodeFences = true
+pygmentsStyle = "autumn"
+
 [permalinks]
   posts = "/:year/:month/:title/"
 
