@@ -58,4 +58,8 @@ end
 
 ### `for`
 
-There are zero reasons to ever use `for` loops.
+<s>There are zero reasons to ever use `for` loops.</s>
+
+Okay, there seems to be an exception to this rule. There is some sense in which you can use higher-order iterators in Crystal's [metaprogramming][crystal-metaprogramming], but it can be easiest to use a `for` loop. This may change in the future.
+
+[crystal-metaprogramming]: https://stackoverflow.com/questions/48037084/why-does-crystals-macro-syntax-for-iterating-differ-from-the-rest-of-crystal
